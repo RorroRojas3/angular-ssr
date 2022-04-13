@@ -23,15 +23,15 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'dist/angular-ssr-csr-hybrid/server/'
+    SourceFolder: 'dist/angular-ssr/server/'
     Contents: '**'
     TargetFolder: 'new-dist/'
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'dist/angular-ssr-csr-hybrid/'
+    SourceFolder: 'dist/angular-ssr/'
     Contents: '**'
-    TargetFolder: 'new-dist/dist/angular-ssr-csr-hybrid/'
+    TargetFolder: 'new-dist/dist/angular-ssr/'
 
 - task: ArchiveFiles@2
   inputs:
